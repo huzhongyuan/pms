@@ -8,6 +8,13 @@
 			break;	
 		}
 	}
+
+	if (location.host == 'localhost:3000' || location.host == '202.202.43.7' ||
+		location.host == '172.22.1.159') {
+		temp = '../';
+	} else {
+		temp = '../../';
+	}
 	var footerTpl = function(){
 		/*
         <fonter>
@@ -17,7 +24,7 @@
 		*/
 	}
 	var footer = footerTpl.toString().replace(/^[^\/]+\/\*!?/, '').replace(/\*\/[^\/]+$/, '') +
-				'<script src="/js/lib/r.js" data-main="/js/page/' + path + '"></script>'+
+				'<script src="'+temp+'/js/lib/r.js" data-main="/js/page/' + path + '"></script>'+
 			  '</div></body></html>';
 	document.write(footer);
 

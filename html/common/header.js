@@ -10,7 +10,7 @@
 		location.host == '172.22.1.159') {
 		temp = '../';
 	} else {
-		temp = '../';
+		temp = '.';
 	}
 
 	for(var i = 0; i < headerCss.length; i++){

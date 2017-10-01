@@ -29,9 +29,12 @@ require(['lib/jquery', 'module/blogitem','module/indexLoadingData','util/funcTpl
 			indexLoadingData();
 
 		},
+
 	};
 
+
 	blog.init();
+
 
 
 });
